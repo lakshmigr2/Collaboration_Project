@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="Collaboration" ng-init="blogitem=true;contact=true;shortcodes=true;pricing=true;portfolio=true;blog=false;users=false;adminJobs=true;adminBlog=false;jobs=false;login=true;register=true;about=true;services=true;home=true;logout=false;chat=false">
+<html ng-app="Collaboration" ng-init="blogitem=true;contact=true;shortcodes=true;pricing=true;portfolio=true;blog=false;users=false;adminJobs=false;adminBlog=false;jobs=false;login=true;register=true;about=true;services=true;home=true;logout=false;chat=false">
 
 <head>
 
@@ -67,21 +67,23 @@
                     <li>
                         <a href="#about">About</a>
                     </li>
-                    <li>
-                        <a href="#blog" ng-show="blog">Blog</a>
-                    </li>
+                   
                     
                     <li><a href="#register" ng-show="register">Register</a></li>
                     <li><a href="#login" ng-show="login"> Login</a></li>
-                    <li><a href="#logout" ng-show="logout"> LogOut</a></li>
+                 
                     <li><a href="#forum" ng-show="forum"> Forum</a></li>
                     <li><a href="#event" ng-show="event"> Event</a></li>
+                    <li><a href="#jobs" ng-show="jobs"> Jobs</a></li>
+                    <li><a href="#blog" ng-show="blog">Blog</a></li>
                     
-                    
-                    <li><a href="#adminBlog" ng-show="adminBlog"> Admin Blogs</a></li>
-                    <!-- <li><a href="#adminJobs" ng-show="adminJobs"> Admin Jobs</a></li> -->
-                       <li><a href="#adminEvent" ng-show="adminEvent">Admin Event</a></li>
-                         
+                    <li><a href="#adminBlog" ng-show="adminBlog">Admin Blogs</a></li>
+              		<li><a href="#adminEvent" ng-show="adminEvent">Admin Event</a></li>
+              		<li><a href="#adminForum" ng-show="adminForum">Admin Forum</a></li>
+                    <li><a href="#adminJobs" ng-show="adminJobs">Admin Jobs</a></li>
+              		<li><a href="#chat" ng-show="chat">chat</a></li>
+              				     
+                    <li><a href="#logout" ng-show="logout"> LogOut</a></li>
                          
                 </ul>
             </div>

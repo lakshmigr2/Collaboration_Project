@@ -22,7 +22,7 @@ public class UserController {
 	@RequestMapping(value="/addUser", method=RequestMethod.POST,headers="Accept=application/json")
 	public void addUser(@RequestBody UsersDetail usersDetail)
 	{
-		usersDetail.setRole("ROLE_ADMIN");
+		usersDetail.setRole("ROLE_USER");
 		
 		usersDetailDao.addUser(usersDetail);
 	
