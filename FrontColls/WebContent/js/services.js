@@ -6,7 +6,7 @@ angular.module("Collaboration.services").service("ChatService", function($q, $ti
     }, messageIds = [];
     
     service.RECONNECT_TIMEOUT = 30000;
-    service.SOCKET_URL = "/FrontColls/chat";
+    service.SOCKET_URL = "/Collaboration/chat";
     service.CHAT_TOPIC = "/topic/message";
     service.CHAT_BROKER = "/app/chat";
     

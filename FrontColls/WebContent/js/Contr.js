@@ -1106,7 +1106,7 @@ letzChaat.controller("adminForumController",function($scope,$http,$rootScope)
 
 
 
-
+/*
 letzChaat.controller("ChatCtrl", function($scope, ChatService) {
 	  $scope.messages = [];
 	  $scope.message = "";
@@ -1121,6 +1121,6 @@ letzChaat.controller("ChatCtrl", function($scope, ChatService) {
 	    $scope.messages.push(message);
 	  });
 	});
-
+*/
 
 

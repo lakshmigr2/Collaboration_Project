@@ -15,10 +15,10 @@ public class OutputMessage extends Message
 		this.username = username;
 	}
 
-	public OutputMessage(Message original, Date time,String username) {
+	public OutputMessage(Message original, Date time) {
         super(original.getId(), original.getMessage());
         this.time = time;
-        this.username=username;
+        
     }
     
     public Date getTime() {
