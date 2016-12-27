@@ -1,6 +1,6 @@
 
 <section id="feature" class="transparent-bg">
-       <hr>
+      
         <div class="container">
  
  <div class="row">
@@ -8,13 +8,15 @@
     <button type="button" class="btn btn-info btn-lg pull-right" data-toggle="modal" data-target="#myModal">Add New Job</button>
      
 			<div class="container">
-    <hr>
+    
     <h2>All Jobs</h2>
     <span class="clearfix"></span>
-    </hr>
+    
+    
+   Enter SearchWord:  <input type="text"  ng-model="search">&nbsp&nbsp<span class="glyphicon glyphicon-search"></span>
+    
     <hr>
-   Enter Technology:  <input type="text"  ng-model="search">&nbsp&nbsp<span class="glyphicon glyphicon-search"></span>
-    <hr></hr>
+    
     <table class="table table-striped">
     <tr>
     <th>Job ID</th>
@@ -34,7 +36,7 @@
             <td>{{ resource.eligibilityCriteria}}</td>
             <td>{{ resource.dateOfInterview}}</td>
             <td><button type="button" class="btn btn-primary btn-sm "  data-toggle="modal" data-target="#editjob" ng-click="editJob(resource)">Edit</button></td>
-         <td><button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#deletejob" ng-click="editJob(resource)">Remove</button></td>
+         <td><button type="button" class="btn btn-primary btn-sm " data-toggle="modal" data-target="#deletejob" ng-click="editJob(resource)">Remove</button></td>
         </tr>    
     </table>
   

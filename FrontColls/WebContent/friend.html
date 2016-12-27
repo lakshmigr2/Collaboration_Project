@@ -1,0 +1,44 @@
+ <div class="container">
+  <div class="container">
+ 		 <div class="row">
+           <div class="box">
+        
+
+     <p>
+     <p>
+     <p>
+     <p>
+     
+     <p>
+     <p>
+     <p>
+     <p>
+     
+     <div class="form-group has-feedback"></div>
+     
+     <span class="glyphicon glyphicon-search"></span>
+
+     <input type="text" ng-model="sear_text">
+     
+     <hr>
+         <div ng-repeat="user in users | filter: sear_text" ng-hide="user.userId==currentUser.userId">
+         
+             <fieldset>
+             
+                   
+                   <p>ID: {{user.userId}} &nbsp; &nbsp; &nbsp; Name: {{user.username}}
+                      &nbsp; &nbsp; &nbsp;  <button type="button" ng-click="sendFriendRequest(user)" 
+                                                        
+                       class="btn btn-warning btn-sm" ng-hide="sendRequestCount">Send Friend Request</button>
+                    </p>
+                    
+                   <p>Email: {{user.userEmail}} &nbsp; &nbsp; &nbsp; Mobile:{{user.userPhone}}</p>
+                   
+                   <p>Full name:{{user.userFullName}} &nbsp; &nbsp; &nbsp; Role:{{user.role}}</p>
+                </fieldset>
+             </div>
+          <br><br>
+          </div>
+          </div>
+          </div>
+          </div>
