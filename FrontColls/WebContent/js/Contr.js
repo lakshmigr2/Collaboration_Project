@@ -179,9 +179,9 @@ letzChaat.controller('logoutController',function($scope,$rootScope,$http)
 			$rootScope.friends=false;
 
 			
-				/*
+				
 				$http.get('http://localhost:8088/Collaboration/logout');
-				*/$scope.message="You are successfully logged out...........";
+				$scope.message="You are successfully logged out...........";
 				
 			
 			
@@ -321,7 +321,7 @@ letzChaat.controller("adminBlogController",function($scope,$http,$rootScope)
 	$rootScope.adminEvent=true;
 	$rootScope.adminForum=true;
 	$rootScope.adminJobs=true;
-	$rootScope.friends=true;
+	$rootScope.friends=false;
 	
 	
 	
@@ -587,7 +587,7 @@ letzChaat.controller("adminEventController",function($scope,$http,$rootScope,$fi
 	$rootScope.adminEvent=true;
 	$rootScope.adminForum=true;
 	$rootScope.adminJobs=true;
-	$rootScope.friends=true;
+	$rootScope.friends=false;
 	
 	
 	console.log("i am in admin event controller");
@@ -822,12 +822,13 @@ letzChaat.controller('adminController',function($scope,$rootScope)
 
 			$rootScope.logout=true;
 			$rootScope.login=false;
+			$rootScope.register=false;
 			
 			$rootScope.adminForum=true;
 			$rootScope.adminJobs=true;
 			$rootScope.adminEvent=true;
 			$rootScope.adminBlog=true;
-			$rootScope.friends=true;
+			$rootScope.friends=false;
 		}
 		);
 
@@ -965,7 +966,7 @@ letzChaat.controller('adminjobsController',function($scope,$http,$rootScope)
 	$rootScope.adminEvent=true;
 	$rootScope.adminForum=true;
 	$rootScope.adminJobs=true;
-	$rootScope.friends=true;
+	$rootScope.friends=false;
 	
 
 	
@@ -1221,7 +1222,7 @@ letzChaat.controller("adminForumController",function($scope,$http,$rootScope)
 	$rootScope.adminEvent=true;
 	$rootScope.adminForum=true;
 	$rootScope.adminJobs=true;
-	$rootScope.friends=true;
+	$rootScope.friends=false;
 	
 	
 	

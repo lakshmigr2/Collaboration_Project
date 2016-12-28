@@ -230,79 +230,40 @@ public class FriendController {
 		UsersDetail loggedInUser = (UsersDetail) session.getAttribute("loggedInUser");
 		System.out.println("user name is "+loggedInUser.getUsername());
 		
-		/*friends=friendsDAO.get(friendID,loggedInUser.getUsername());
-		System.out.println("friend id is "+friends.getId());
-		friends.setStatus("R");
-		friendsDAO.update(friends);
-		
-		
-		
-		
-		friends=friendsDAO.get(loggedInUser.getUsername(),friendID);
-		if(friends==null){
-			System.out.println("its null");
-			friends.setFriendID(loggedInUser.getUsername());
-			friends.setUserID(friendID);
-			friends.setStatus("R");
-			friendsDAO.save(friends);
-		}
-		
-		else{
-			friends.setStatus("R");
-			friendsDAO.update(friends);
-		}*/
-
-		
-		
-		
-		
-		/*friends=friendsDAO.get(friendID,loggedInUser.getUsername());
-		System.out.println("friend id is "+friends.getId());
-		friends.setStatus("R");
-		friendsDAO.update(friends);
-		*/
-		
-		
-		
-		friends=friendsDAO.get(loggedInUser.getUsername(),friendID);
-		
-			friends.setStatus("R");
-			friendsDAO.update(friends);
-	
-		
-		
 		friends=friendsDAO.get(friendID,loggedInUser.getUsername());
-		if(friends==null){
-			System.out.println("its null");
-			friends = new Friends();
-			friends.setFriendID(loggedInUser.getUsername());
-			friends.setUserID(friendID);
-			friends.setStatus("R");friends.setIsOnline('Y');
-			friendsDAO.save(friends);
-		}
 		
-		else{System.out.println("record id "+friends.getId());
-			friends.setStatus("R");
-			friendsDAO.update(friends);
-		}
+		System.out.println("record id "+friends.getId());
 		
-		
-		
-		
-		
-		
-		
-		/*friends.setUserID(loggedInUser.getUsername());
-		//friends.setUserID("Anuradha");
-		friends.setFriendID(friendID);
 		friends.setStatus("R");
-		friendsDAO.update(friends);*/
-		return friends;		
+		friendsDAO.update(friends);
+	
+	
+	
+	
+	
+	friends=friendsDAO.get(loggedInUser.getUsername(),friendID);
+	if(friends==null){
+		System.out.println("its null");
+		
+			friends = new Friends();
+			friends.setUserID(loggedInUser.getUsername());
+			//friends.setUserID("Anuradha");
+			friends.setFriendID(friendID);
+			friends.setStatus("R");
+			friends.setIsOnline('Y');
+			friendsDAO.save(friends);
 	}
 	
+	else{
+		System.out.println("record id "+friends.getId());
 	
+		friends.setStatus("R");
+		friendsDAO.update(friends);
+	}
 	
-	
+	return friends;
+}
+
 	
 	
 	
