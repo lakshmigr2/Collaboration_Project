@@ -62,7 +62,7 @@ public class UserController {
 		 if(result!=0){
 			 session.setAttribute("loggedInUser", usersDetail);
 			 session.setAttribute("loggedInUserId", usersDetail.getUserId());
-			 friendDAO.setOnline(usersDetail.getUsername());
+			 //friendDAO.setOnline(usersDetail.getUsername());
 		 }
 		 return result;
 	 }
@@ -75,7 +75,7 @@ public class UserController {
 			UsersDetail loggedInUser = (UsersDetail) session.getAttribute("loggedInUser");
 			System.out.println("user name is "+loggedInUser.getUsername());
 		
-		 friendDAO.setOffLine(loggedInUser.getUsername());
+		 //friendDAO.setOffLine(loggedInUser.getUsername());
 		 session.invalidate();
 		 System.out.println("Session logged out");
 	 }

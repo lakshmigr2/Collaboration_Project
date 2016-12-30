@@ -1284,7 +1284,7 @@ letzChaat.controller("adminForumController",function($scope,$http,$rootScope)
 				forumId:$scope.forumDataToEdit.forumId;
 				console.log("forumId:"+forumDataToEdit.forumId);
 				$http['delete']('http://localhost:8088/Collaboration/deleteForum/'+forumDataToEdit.forumId);
-				$http.DELETE('http://localhost:8088/Collaboration/deleteForum/'+forumDataToEdit.forumId);
+				/*$http.DELETE('http://localhost:8088/Collaboration/deleteForum/'+forumDataToEdit.forumId);*/
 				 $http.get("http://localhost:8088/Collaboration/viewForums")
 			 	    .then(function (response) {$scope.forums = response.data;});
 			}

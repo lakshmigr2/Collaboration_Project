@@ -86,7 +86,7 @@ public class JobsDaoImpl implements JobsDao {
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		List<JobRegistration> list = query.list();
 		if (list == null || list.isEmpty()) {
-			System.out.println("No products available");
+			System.out.println("Job applied");
 			return null;
 		}
 		return list;
